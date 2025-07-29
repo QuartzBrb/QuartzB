@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frisör Olle Lindström</title>
+  <style>
+    :root {
+      --main-color: #e7d6ff;
+      --accent-color: #b48ec6;
+      --text-color: #333;
+      --bg-color: #fdfbff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--main-color);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      color: var(--accent-color);
+      font-size: 1.6rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+
+    ul li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .booking {
+      margin-top: 2rem;
+    }
+
+    .calendly-inline-widget {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .calendly-inline-widget {
+        height: 600px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Frisör Olle Lindström</h1>
+    <p>Jag hjälper dig hitta rätt stil – boka enkelt din tid direkt på hemsidan!</p>
+  </header>
+
+  <div class="container">
+    <h2>Om mig</h2>
+    <p>Jag är en självlärd frisör sedan tre år tillbaka. Jag klipper utifrån din önskade frisyr och lägger stor vikt vid att du ska känna dig nöjd och bekväm när du lämnar stolen.</p>
+
+    <h2>Tjänster</h2>
+    <ul>
+      <li>✂️ Klippning – 20–40 min – 195 kr</li>
+    </ul>
+
+    <div class="booking">
+      <h2>Boka tid</h2>
+      <!-- Calendly inline widget -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/lovelindstrom/klippning"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Olle Lindström. Allt hår är välkommet. 💜
+  </footer>
+
+</body>
+</html>
+
